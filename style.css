@@ -342,4 +342,21 @@ button {
   max-width: 100%;
   height: auto;
 }
+/* CSS Animation for Fade-In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the heading */
+.hero h1 {
+  animation: fadeIn 1.5s ease-out;
+}
+
 
